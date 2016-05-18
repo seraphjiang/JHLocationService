@@ -1,0 +1,6 @@
+framework module JHLocationService {
+  umbrella header "JHLocationService-umbrella.h"
+
+  export *
+  module * { export * }
+}

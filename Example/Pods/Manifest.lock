@@ -1,0 +1,43 @@
+PODS:
+  - FBSnapshotTestCase (2.1.0):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.0)
+  - FBSnapshotTestCase/Core (2.1.0)
+  - FBSnapshotTestCase/SwiftSupport (2.1.0):
+    - FBSnapshotTestCase/Core
+  - JHLocationService (0.1.0)
+  - Nimble (3.2.0)
+  - Nimble-Snapshots (4.1.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble
+    - Quick
+  - Quick (0.9.2)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (from `https://github.com/facebook/ios-snapshot-test-case.git`, commit `b898c25`)
+  - JHLocationService (from `../`)
+  - Nimble (~> 3.0)
+  - Nimble-Snapshots
+  - Quick (~> 0.8)
+
+EXTERNAL SOURCES:
+  FBSnapshotTestCase:
+    :commit: b898c25
+    :git: https://github.com/facebook/ios-snapshot-test-case.git
+  JHLocationService:
+    :path: ../
+
+CHECKOUT OPTIONS:
+  FBSnapshotTestCase:
+    :commit: b898c25
+    :git: https://github.com/facebook/ios-snapshot-test-case.git
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 68c3221ddd3bf5bbe783c1015f8acc12c3768a4d
+  JHLocationService: d108a64c0cf00a0ff87ea9fb065cc002bf9547d8
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Nimble-Snapshots: 2da4d2ec829b458d6886c06812c52493fce284c9
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+
+PODFILE CHECKSUM: 75bf218297bd0008a9e4f0888d6dea3a5cb6cbc2
+
+COCOAPODS: 1.0.0
