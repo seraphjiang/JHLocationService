@@ -106,7 +106,6 @@
 		B6A67A3B998747E4290BF6010EC33806 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3480229FE5312ED491104B2619BC675D /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B77C2538BE8B1BD2326249E213C8DA16 /* JHLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55EDA561AD9234AD84A9E243FCC1C7F /* JHLocationService.swift */; };
 		B9D2E426B5CA226D60A78A71FA289D4C /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F5BE94693475F841CEEC329FF19A11 /* AsyncMatcherWrapper.swift */; };
-		B9F9EC747ADC4CC642A751E254F7FF4B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDF4BE4AE388EA0CCEE10BC1B087A3 /* ReplaceMe.swift */; };
 		BBE10615F3CD16FAF02BBD3D42B6D246 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60104C3BBC45FA4AE08E62653BA6F961 /* World+DSL.swift */; };
 		BD6302ECE07C5DD92C9826E7E6C9DBA9 /* Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64228F5CDC7D1D84B4330B40FFB69D8A /* Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C033C346AC287D2009457C31E85587D1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C36DB6F05615EC71278526272A72BAD /* Quick.framework */; };
@@ -262,7 +261,6 @@
 		6CC8B86181C85EC4029D31826D97DBDE /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Sources/Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
 		712924708985B1EB68BCE0D290D815FC /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Sources/Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
 		7395C69488EE986713CFCD76E434400B /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Sources/Quick/QuickSpec.h; sourceTree = "<group>"; };
-		74DDF4BE4AE388EA0CCEE10BC1B087A3 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		75B9D6A8F67F6DFC9F872BC9FC75BEA4 /* Pods-JHLocationService_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JHLocationService_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7721577730C07577C8AAE8B06E7DBFC0 /* NimbleEnvironment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleEnvironment.swift; path = Sources/Nimble/Adapters/NimbleEnvironment.swift; sourceTree = "<group>"; };
 		77FF979DB93FFC369BEC3D6B3C8B9C7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -534,7 +532,6 @@
 			isa = PBXGroup;
 			children = (
 				D55EDA561AD9234AD84A9E243FCC1C7F /* JHLocationService.swift */,
-				74DDF4BE4AE388EA0CCEE10BC1B087A3 /* ReplaceMe.swift */,
 				E81487911CEBFA49006F6CB5 /* JHLocationServiceDelegate.swift */,
 			);
 			path = Classes;
@@ -1087,7 +1084,6 @@
 			files = (
 				AC1D1C5952125310B8ACF309D74D87D7 /* JHLocationService-dummy.m in Sources */,
 				B77C2538BE8B1BD2326249E213C8DA16 /* JHLocationService.swift in Sources */,
-				B9F9EC747ADC4CC642A751E254F7FF4B /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

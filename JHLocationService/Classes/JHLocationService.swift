@@ -25,16 +25,19 @@ public class JHLocationService: NSObject, CLLocationManagerDelegate {
         self.locationManager.delegate = self
     }
     
-    
     public func startUpdatingLocation() {
         print("Start updating location.")
-        self.locationManager.requestAlwaysAuthorization()
-        
+        if (CLLocationManager.authorizationStatus() == .AuthorizedAlways || CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse) {
+            self.locationManager.startUpdatingLocation()
+        }
+        else {
+            self.locationManager.requestAlwaysAuthorization()
+        }
     }
     
     public func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         
-        if status == .AuthorizedAlways {
+        if (status == .AuthorizedAlways || status == .AuthorizedWhenInUse) {
             self.locationManager.startUpdatingLocation()
         }
         else {
@@ -42,7 +45,7 @@ public class JHLocationService: NSObject, CLLocationManagerDelegate {
         }
         
         if self.delegate != nil {
-            self.delegate?.locationManager!(manager, didChangeAuthorizationStatus: status)
+            self.delegate?.locationManager?(manager, didChangeAuthorizationStatus: status)
         }
     }
     
@@ -50,7 +53,7 @@ public class JHLocationService: NSObject, CLLocationManagerDelegate {
         print("Location service failed with error ",  error.localizedDescription)
         
         if self.delegate != nil {
-            self.delegate?.locationManager!(manager, didFailWithError: error)
+            self.delegate?.locationManager?(manager, didFailWithError: error)
         }
     }
 
@@ -60,7 +63,7 @@ public class JHLocationService: NSObject, CLLocationManagerDelegate {
         self.currentLocation = location
         
         if self.delegate != nil {
-            self.delegate?.locationManager!(manager, didUpdateLocations: locations)
+            self.delegate?.locationManager?(manager, didUpdateLocations: locations)
         }
     }
 }

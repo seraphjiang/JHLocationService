@@ -52,6 +52,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        NSLog("%@", error)
+    }
+    
     func show(message: String) -> Void {
         if var topController = UIApplication.sharedApplication().keyWindow?.rootViewController {
             while let presentedViewController = topController.presentedViewController {

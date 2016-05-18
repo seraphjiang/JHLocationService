@@ -8,5 +8,5 @@
 
 import UIKit
 
-protocol JHLocationServiceDelegate: class {
+@objc protocol JHLocationServiceDelegate: class {
 }
